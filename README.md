@@ -1,27 +1,27 @@
 # Find1stats
-## App Title:
--"Find1stats"
+### App Title:
+- "Find1stats"
 
-## App description:
+### App description:
 - Find1stats will be a responsive website that accurately and easily displays F1 standings, records, team history, current powertrain suppliers, etc.
 
-## AP: 
+### AP: 
 - http[s]://ergast.com/api/<series>/<season>/<round>/
 
-## API snippet:
+### API snippet:
 - http://ergast.com/api/f1/drivers.json?callback=myParser
 
-### Wireframes:
+## Wireframes:
 - [WireFrame](https://wireframe.cc/pro/pp/5e7d318db448480)
 
-#### MVP:
+### MVP:
 - Axios call on ergast API, Display results on page, include photos of 
 results, provide information about the search
 
-#### Post-MVP:
+### Post-MVP:
 - Include a dropdown menu to display current information about driver standings, team standings etc...
 
-#### Goals:
+## Goals:
 | Date      | Description                                              |
 | ----------| :-------------------------------------------------------:|
 | June 8th  | Write the base code for the api, index html, and base CSS|
