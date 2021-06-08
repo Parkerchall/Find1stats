@@ -30,10 +30,10 @@ results, provide information about the search
 | June 11th | Apply finishing touches for project deployment and debug over the weekend                                                            |
 | June 14th | Present the project                                      |
 
-#### Priority Matrix:
+### Priority Matrix:
 - [Priority Matrix](http://imgur.com/a/wjK9rbm)
 
-#### Timeframes:
+### Timeframes:
 | Description         | Time |   
 | ------------------- |:----:|           
 |Index.HTML setup     | 3hrs |
