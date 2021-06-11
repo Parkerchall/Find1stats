@@ -2,34 +2,30 @@
   display: flex;
   color: silver;
   background-color: crimson;
-  margin: -10px -10px -20px -10px;
+  margin: -10px -10px 0px -10px;
 }
-.search-bar{
-
-}
-.top-bar {
-  text-align: center;
-  background-color: gray;
-  margin: -16px;
-}
-::marker {
-  list-style: none;
+#searchBar {
+  width: 40%;
+  height: 32px;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 5px 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 .images {
-height: 200px;
-width: 24%;
+height: 600px;
+width: 25vw;
 position: absolute;
 right: 0px;
 background-color: yellow;
 }
-.driver{
-
-}
 .page-content{
 background-color: #ddd;
-padding: 10px;
 height: 600px;
-width: 73%;
+width: 75vw;
 position: absolute;
 left: 0px;
 }
