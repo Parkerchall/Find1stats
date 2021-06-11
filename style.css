@@ -1,0 +1,35 @@
+.header { 
+  display: flex;
+  color: silver;
+  background-color: crimson;
+  margin: -10px -10px -20px -10px;
+}
+.search-bar{
+
+}
+.top-bar {
+  text-align: center;
+  background-color: gray;
+  margin: -16px;
+}
+::marker {
+  list-style: none;
+}
+.images {
+height: 200px;
+width: 24%;
+position: absolute;
+right: 0px;
+background-color: yellow;
+}
+.driver{
+
+}
+.page-content{
+background-color: #ddd;
+padding: 10px;
+height: 600px;
+width: 73%;
+position: absolute;
+left: 0px;
+}
