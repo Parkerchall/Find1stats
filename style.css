@@ -1,7 +1,15 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
 .header { 
   display: flex;
-  color: silver;
-  background-color: crimson;
+  position: relative;
+  background-image: url("https://f2fanatic.files.wordpress.com/2020/08/we-race-as-one.png");
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0);
+  background-color: rgb(250, 250, 250);
   margin: -10px -10px 0px -10px;
 }
 #searchBar {
@@ -11,21 +19,28 @@
   border: 1px solid black;
   padding: 5px 10px;
   font-size: 14px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
+  position: relative;
+  top: 0px;
 }
-.images {
-height: 600px;
-width: 25vw;
-position: absolute;
-right: 0px;
-background-color: yellow;
+.search-box-dropdown {
+  position: relative;
+  left: 10px;
+  justify-content: space-around;
+}
+p {
+  background-color: rgba(128, 128, 128, 0.25);
+  width: 40%;
+
 }
 .page-content{
-background-color: #ddd;
-height: 600px;
-width: 75vw;
+background-image: url("https://i.redd.it/hxwoqirzwll21.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+background-color: black;
+width: 100vw;
+height: 100vh;
 position: absolute;
 left: 0px;
 }
