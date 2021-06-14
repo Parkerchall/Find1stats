@@ -33,7 +33,7 @@ const getDriver = async () => {
         //search results
         filteredDrivers.slice(0,16).forEach(driver => {
           const p = document.createElement("p");
-          p.innerText = driver.givenName + " " + driver.familyName
+          p.innerText = driver.familyName
           searchBoxDropdown.appendChild(p);
         })
       })
