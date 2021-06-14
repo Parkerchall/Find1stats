@@ -5,7 +5,7 @@ body {
   display: flex;
   position: relative;
   background-image: url("https://f2fanatic.files.wordpress.com/2020/08/we-race-as-one.png");
-  background-attachment: fixed;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   color: rgba(0, 0, 0, 0);
@@ -22,6 +22,11 @@ body {
   position: relative;
   top: 0px;
 }
+.button {
+  width: 10%;
+  height: 32px;
+  z-index: 0;
+}
 .search-box-dropdown {
   position: relative;
   left: 10px;
@@ -34,13 +39,26 @@ p {
 }
 .page-content{
 background-image: url("https://i.redd.it/hxwoqirzwll21.png");
-background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 background-size: cover;
-background-color: black;
 width: 100vw;
 height: 100vh;
 position: absolute;
 left: 0px;
+z-index: -1;
+}
+displayname {
+  background-image: url("https://cdn.realsport101.com/images/ncavvykf/gfinityesports/6c47a6f4b3902586ca8c409438413ca262467881-494x779.png?w=317&h=500&auto=format");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  top: 88px;
+  height: 500px;
+  width: 317px;
+  background-size: cover;
 }
