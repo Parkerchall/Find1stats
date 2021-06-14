@@ -9,7 +9,7 @@ function clearSearchBoxDropdown() {
   }
 }
 const getDriver = async () => {
-  const url = `http://ergast.com/api/f1/2021/drivers.json?`;
+  const url = `https://ergast.com/api/f1/2021/drivers.json?`;
   
   const response = await axios 
   .get(url)
@@ -33,7 +33,7 @@ const getDriver = async () => {
         //search results
         filteredDrivers.slice(0,16).forEach(driver => {
           const p = document.createElement("p");
-          p.innerText = driver.givenName + " " + driver.familyName + " " +driver.dateOfBirth + " " + driver.nationality;
+          p.innerText = driver.givenName + " " + driver.familyName
           searchBoxDropdown.appendChild(p);
         })
       })
@@ -41,19 +41,20 @@ const getDriver = async () => {
     getDriver();
     const getCurrentDriver = async () => {
       const currentDriver = jubran.value.toLowerCase();
-      console.log(jubran.value);
-      const response = await axios.get(`http://ergast.com/api/f1/2021/drivers/${currentDriver}.json?`)
-      const driverDetails = response.data.MRData.DriverTable.Drivers;
+      const response = await axios.get(`https://ergast.com/api/f1/2021/drivers/${currentDriver}.json?`)
+      const driverDetails = response.data.MRData.DriverTable.Drivers[0];
+      console.log(response);
       displayDriver(driverDetails);
     };
 
     const displayDriver = (driverDetails) => {
       const displayDetails= document.querySelector('.driver');
       const displayName = document.createElement('displayName');
-      displayName.innerText = driverDetails.givenName + " "  + driverDetails.permanentNumber + " " + driverDetails.dateOfBirth + " " + driverDetails.nationality; 
+      displayName.innerText = driverDetails.givenName + " " + driverDetails.familyName + " " + driverDetails.permanentNumber + " " + driverDetails.dateOfBirth + " " + driverDetails.nationality; 
       displayDetails.appendChild(displayName)
+      console.log(driverDetails);
     }
-    jubran.addEventListener('change', displayDriver)
+    jubran.addEventListener('change', getCurrentDriver)
 
     // searchButton.addEventListener("click", (event) => {
     //   event.preventDefault();

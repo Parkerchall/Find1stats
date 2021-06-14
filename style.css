@@ -51,14 +51,14 @@ z-index: -1;
 displayname {
   background-image: url("https://cdn.realsport101.com/images/ncavvykf/gfinityesports/6c47a6f4b3902586ca8c409438413ca262467881-494x779.png?w=317&h=500&auto=format");
   display: flex;
-  justify-content: center;
+  text-align: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 30px;
   z-index: 1;
   position: absolute;
   right: 0px;
   top: 88px;
-  height: 500px;
-  width: 317px;
+  height: 300px;
+  width: 200px;
   background-size: cover;
 }
